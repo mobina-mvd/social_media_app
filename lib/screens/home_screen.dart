@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:social_media_app/data/data.dart';
 import 'package:social_media_app/models/user_model.dart';
+import 'package:social_media_app/widgets/custom_drawer.dart';
 import 'package:social_media_app/widgets/following_users.dart';
 import 'package:social_media_app/widgets/posts_carousel.dart';
 
@@ -30,6 +31,7 @@ class _HomeScreenState extends State<HomeScreen>
     final ThemeData themeData = Theme.of(context);
 
     return Scaffold(
+      drawer: CustomDrawer(),
       appBar: AppBar(
         iconTheme: IconThemeData(color: themeData.colorScheme.primary),
         backgroundColor: Colors.white,
